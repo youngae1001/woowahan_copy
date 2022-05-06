@@ -35,5 +35,13 @@ $(document).ready(function(){
         })
     }
 
+    $(".slider2").slick({
+        autoplay : true ,
+        autoplaySpeed : 2000 ,
+        dots: false ,
+        infinite: true ,
+        slidesToShow: 10,
+        swipeToSlide: true ,
+    })
     // 끝
 })
