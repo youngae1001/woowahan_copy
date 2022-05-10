@@ -37,20 +37,37 @@ $(document).ready(function(){
 
     $(".slider2").slick({
         autoplay : true ,
-        autoplaySpeed : 2000 ,
+        autoplaySpeed : 0 ,
+        speed: 3000,
         dots: false ,
         infinite: true ,
         slidesToShow: 10,
         swipeToSlide: true ,
+        cssEase: "linear" ,
+    })
+
+    var $video = $(".section > .video > video").get(0);
+
+    $(".section > .video > .btn_wrap > .pause").click(function(){
+        $video.pause();
+        $(".section > .video > .btn_wrap > .pause").removeClass("active");
+        $(".section > .video > .btn_wrap > .start").addClass("active");
+    })
+    $(".section > .video > .btn_wrap > .start").click(function(){
+        $video.play();
+        $(".section > .video > .btn_wrap > .start").removeClass("active");
+        $(".section > .video > .btn_wrap > .pause").addClass("active");
     })
 
     $(".slider3 > ul").slick({
         autoplay : true ,
-        autoplaySpeed : 2000 ,
+        autoplaySpeed : 0 ,
+        speed: 3000,
         dots: false ,
         infinite: true ,
         slidesToShow: 11,
         swipeToSlide: true ,
+        cssEase: "linear" ,
     })
     // 끝
 })

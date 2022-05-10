@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "DOHYEON";
+    src: url(../font/BMDOHYEON_ttf.ttf);
+}
+
+@font-face {
+    font-family: "HANNAAir";
+    src: url(../font/BMHANNAAir_ttf.ttf);
+}
+
+@font-face {
+    font-family: "HANNAPro";
+    src: url(../font/BMHANNAPro.ttf);
+}
+
+h1 {
+    font-family: "DOHYEON";
+}
+
+h2 {
+    font-family: "HANNAAir";
+}
+
+h3 {
+    font-family: "HANNAPro", "HANNAAir", "DOHYEON";
+    /* 이처럼 여러개를 쓸 경우에는 제일 앞에 있는 폰트가 적용됨 */
+    /* 여러개를 쓰는 이유 : 만약 우선순위의 폰트가 소실되거나 지원하지 않는 폰트일 경우 그 다음 순위의 폰트가 적용됨 */
+}
