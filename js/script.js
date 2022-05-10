@@ -43,5 +43,14 @@ $(document).ready(function(){
         slidesToShow: 10,
         swipeToSlide: true ,
     })
+
+    $(".slider3 > ul").slick({
+        autoplay : true ,
+        autoplaySpeed : 2000 ,
+        dots: false ,
+        infinite: true ,
+        slidesToShow: 11,
+        swipeToSlide: true ,
+    })
     // 끝
 })
